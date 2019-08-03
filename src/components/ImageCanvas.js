@@ -82,6 +82,7 @@ const StyledImageCanvas = withCropBox(styled(ImageCanvas)`
         display: block;
         border: 1px solid #D9DDE3;
         border-radius: 10px;
+        cursor: crosshair;
     }
 `)
 

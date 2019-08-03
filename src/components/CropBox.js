@@ -1,6 +1,7 @@
 import React, { useState } from 'react'
 import styled from 'styled-components'
 import { Rnd } from 'react-rnd'
+import deleteIcon from '../images/delete.png'
 import withCropBox from '../contexts/CropBoxContext/withCropBox'
 
 const CropBox = (props) => {
@@ -67,12 +68,15 @@ const CropBox = (props) => {
 }
 
 const StyledCropBox = withCropBox(styled(CropBox)`
-    border: 1px solid blue;
+    border: 1px solid #138ee1;
     ~ .delbtn {
         position: absolute;
         width: 20px;
         height: 20px;
-        background: green;
+        background: #E0E2E4 url(${deleteIcon}) no-repeat center;
+        background-size: contain;
+        border-radius: 3px;
+        box-shadow: 0 0 2px 0 rgba(0, 0, 0, .3);
         cursor: pointer;
     }
 `)
